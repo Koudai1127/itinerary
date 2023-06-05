@@ -26,12 +26,17 @@ header {
 }
 
 .headerlogo p {
-    margin: 0 .5rem;
+    margin: 0 .75rem;
     padding: .5rem 0;
     line-height: 1.25rem;
+    color: #ffffff;
 }
 
 /* ナビゲーション */
+
+.pc-menu {
+    display: none;
+}
 
 .pc-menu ul {
     display: flex;
@@ -51,9 +56,9 @@ header {
     color: #000000;
 }
 
-.pc-menu ul li a:hover {
+/* .pc-menu ul li a:hover {
     background: #bbbbbb;
-}
+} */
 
 .sp-menu__box {
     position: fixed;
@@ -65,7 +70,7 @@ header {
     height: 4.5rem;
     width: 4.5rem;
     z-index: 100;
-    background-color: #3484bb;
+    background-color: rgb(75, 140, 196);
 
 }
 
@@ -73,9 +78,9 @@ header {
 .sp-menu__box span:before,
 .sp-menu__box span:after {
     content:"";
-    display: block;
+    display: inline-block;
     height: 3px;
-    width: 35px;
+    width: 40px;
     border-radius: 3px;
     background-color:#ffffff;
     position: absolute;
@@ -90,7 +95,9 @@ header {
 }
 
 #sp-menu__check {
-    display: none;
+    position: absolute;
+    z-index:100;
+    /* display: none; */
 }
 
 #sp-menu__check:checked ~ .sp-menu__box span {
@@ -118,19 +125,19 @@ header {
     top: 0;
     left:100%;
     z-index: 90;
-    background-color: #3584bb;
-    transition: all 0.5s;
+    background-color: rgb(75, 140, 196);
+    transition: all 0.3s;
 }
 
 .sp-menu__list {
     padding:70px 10px 0;
 }
-
+ 
 .sp-menu__item {
     border-bottom: solid 1px #ffffff;
     list-style: none;
-}
-
+} 
+ 
 .sp-menu__link {
     display: block;
     width: 100%;
@@ -139,13 +146,11 @@ header {
     color:#ffffff;
     text-decoration: none;
     padding: 9px 15px 10px 0;
-}
+} 
 
 #sp-menu__check:checked ~ .sp-menu__content {
     left:0;
-}
-
-
+} 
 
 
 
