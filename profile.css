@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* スマホ対応で作成 */
+
+/* ヘッダー --------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    background-color:rgb(75, 140, 196);
+}
+
+.headermain {
+    padding: .5rem;
+    display: flex;
+}
+
+
+.headerlogo {
+    display: flex;
+}
+
+.headerlogo img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.headerlogo p {
+    margin: 0 .75rem;
+    padding: .5rem 0;
+    line-height: 1.25rem;
+    color: #ffffff;
+}
+
+/* ナビゲーション */
+
+.pc-menu {
+    display: none;
+}
+
+.pc-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.pc-menu ul li {
+    text-align: center;
+    font-size: 16px;
+    width: 25%;
+}
+
+.pc-menu ul li a {
+    display: block;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* .pc-menu ul li a:hover {
+    background: #bbbbbb;
+} */
+
+.sp-menu__box {
+    position: fixed;
+    top: 0;
+    right:0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 4.5rem;
+    width: 4.5rem;
+    z-index: 100;
+    background-color: rgb(75, 140, 196);
+
+}
+
+.sp-menu__box span,
+.sp-menu__box span:before,
+.sp-menu__box span:after {
+    content:"";
+    display: inline-block;
+    height: 3px;
+    width: 40px;
+    border-radius: 3px;
+    background-color:#ffffff;
+    position: absolute;
+}
+
+.sp-menu__box span:before {
+    bottom:10px;
+}
+
+.sp-menu__box span:after {
+    top: 10px;
+}
+
+#sp-menu__check {
+    position: absolute;
+    z-index:100;
+    top: -50%;
+    left: -50%;
+    /* display: none; */
+}
+
+#sp-menu__check:checked ~ .sp-menu__box span {
+    background:rgba(255,255,255,0);
+}
+
+#sp-menu__check:checked ~ .sp-menu__box span::before {
+    bottom:0;
+    transform:rotate(45deg);
+}
+
+#sp-menu__check:checked ~ .sp-menu__box span::after {
+    top:0;
+    transform:rotate(-45deg);
+}
+
+#sp-menu__check:checked ~ .hamburger__content {
+    left:0;
+}
+
+.sp-menu__content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:100%;
+    z-index: 90;
+    background-color: rgb(75, 140, 196);
+    transition: all 0.3s;
+}
+
+.sp-menu__list {
+    padding:70px 10px 0;
+}
+ 
+.sp-menu__item {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+} 
+ 
+.sp-menu__link {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing:border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+} 
+
+#sp-menu__check:checked ~ .sp-menu__content {
+    left:0;
+} 
+
+/* メイン-------------------------------------------------- */
+main {
+    min-height: 100vh;
+}
+
