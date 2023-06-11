@@ -1,0 +1,26 @@
+﻿main{
+    padding-top: 4.5rem;
+}
+
+p{
+    /*font-sizeはいったん保留*/
+}
+
+.pageTitle{
+    text-align: center;
+}
+
+.content{
+    margin-bottom: 50px;
+}
+
+.content h1{
+    border-left: 15px solid blue;
+    padding-left: 5%;
+}
+
+.content img {
+    width: 75%;
+    
+    /*この画像たちをスライドさせたらよさそう*/
+}

@@ -2,57 +2,60 @@
 
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="destyle.css">
-    <link rel="stylesheet" href="toppage.css">
-    <link rel="stylesheet" href="outline.css">
-
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/outline.css">
+    <title>Aチーム旅行 しおり</title>
 </head>
 <body>
     <header>
         <div class="headermain">
-            <div class="headerlogo">
-                <img src="img/logo.png" alt="Aチームロゴ">
-                <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
-            </div>
-            <div class="pc-menu">
+            <a href="index.html">
+                <div class="headerlogo">
+                    <img src="img/logo.png" alt="Aチームロゴ">
+                    <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
+                </div>
+            </a>
+            <!--<div class="pc-menu">
                 <ul>
                     <li>
                         <a href="#">概要</a>
                     </li>
                     <li>
-                        <a href="#">プロフィール</a>
+                        <a href="#">１日目</a>
                     </li>
                     <li>
-                        <a href="#">スケジュール</a>
+                        <a href="#">２日目</a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <div class="sp-menu">
-                <input type="checkbox" id="sp-menu__check">
-                <label for="sp-menu__check" class="sp-menu__box">
-                    <span></span>
-                </label>
+                <button class="sp-menu__box" , type="button">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </button>
+
                 <div class="sp-menu__content">
                     <ul class="sp-menu__list">
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">概要</a>
+                            <a class="sp-menu__link" href="outline.html">概要</a>
                         </li>
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">１日目</a>
+                            <a class="sp-menu__link" href="profile.html">プロフィール</a>
                         </li>
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">２日目</a>
+                            <a class="sp-menu__link" href="schedule.html">スケジュール</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </header>
+
     <main>
         <div class="pageTitle">
             <h1>概要</h1>
@@ -104,5 +107,9 @@
             </ul>
         </div>
     </main>
+
+    <script src="js/header.js"></script>
+    <script src="js/outline.js"></script>
+
 </body>
 </html>
