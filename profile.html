@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="destyle.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <script type="text/javascript" src="js/header.js" defer></script>
+    <script type="text/javascript" src="js/profile.js" defer></script>
     <title>Aチーム旅行 しおり</title>
 </head>
 <body>
@@ -64,10 +66,18 @@
                     <p></p>
 
                 </div>
-                <div class="member1">
+                <button id="modalOpen1" class="member1">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>長男</p>
                     <p>岸上　航大</p>
+                </button>                 
+                <div id="easyModal1" class="modal1">
+                    <div class="modal-content">
+                        <span class="modalClose1">×</span>
+                        <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                        <p>長男</p>
+                        <p>岸上　航大</p>                                                
+                    </div>
                 </div>
             </div>
             <div class="member_profile">
@@ -101,9 +111,6 @@
     </main>
     <footer>
     </footer>
-
-    <script src="js/header.js"></script>
-    <script src="js/profile.js"></script>
 
 </body>
 </html>
