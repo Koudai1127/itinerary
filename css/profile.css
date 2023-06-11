@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* スマホ対応で作成 */
+
+/* メイン-------------------------------------------------- */
+main {
+    padding-top: 4.5rem;
+/*  min-height: 100vh;*//*これ入れるとハンバーガーメニューがバグるからコメントアウトしました*/
+    background-color: #D7EEFF	;    
+}
+
+.member {
+    width: 95%;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* align-items: start; */
+    padding-top: 7rem;
+    margin: 0 auto;
+    /* background-color: red; */
+
+}
+
+.member_profile {
+    display: flex;
+}
+
+.member1 {    
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.photo {
+    width: 100%;
+    margin-bottom: .75rem;
+}
+
+.member1 p {
+    margin-bottom: .5rem;
+}
+

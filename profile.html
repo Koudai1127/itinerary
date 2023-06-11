@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="destyle.css">
-    <link rel="stylesheet" type="text/css" href="profile.css">
-    <title>Aチーム旅行/プロフィール</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <title>Aチーム旅行 しおり</title>
 </head>
 <body>
     <header>
-        <div class = "headermain">    
-            <div class="headerlogo">
-                <img src="img/logo.png" alt="Aチームロゴ">
-                <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
-            </div>
-            <div class="pc-menu">
+        <div class="headermain">
+            <a href="index.html">
+                <div class="headerlogo">
+                    <img src="img/logo.png" alt="Aチームロゴ">
+                    <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
+                </div>
+            </a>
+            <!--<div class="pc-menu">
                 <ul>
                     <li>
                         <a href="#">概要</a>
@@ -27,77 +30,80 @@
                         <a href="#">２日目</a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <div class="sp-menu">
-                <input type="checkbox" id="sp-menu__check">
-                <label for="sp-menu__check" class="sp-menu__box">
-                    <span></span>
-                </label>
+                <button class="sp-menu__box" , type="button">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </button>
+
                 <div class="sp-menu__content">
                     <ul class="sp-menu__list">
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">概要</a>
+                            <a class="sp-menu__link" href="outline.html">概要</a>
                         </li>
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">１日目</a>
+                            <a class="sp-menu__link" href="profile.html">プロフィール</a>
                         </li>
                         <li class="sp-menu__item">
-                            <a class="sp-menu__link" href="#">２日目</a>
+                            <a class="sp-menu__link" href="schedule.html">スケジュール</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </header>
+
     <main>
         <div class="member">
             <div class="member_profile">
                 <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p></p>
-                    <p></p>   
-                    
-                </div>            
+                    <p></p>
+
+                </div>
                 <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>長男</p>
-                    <p>岸上　航大</p>                  
+                    <p>岸上　航大</p>
                 </div>
             </div>
             <div class="member_profile">
                 <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>長女</p>
-                    <p>小林　海生</p>   
-                    
-                </div>            
+                    <p>小林　海生</p>
+
+                </div>
                 <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>母</p>
-                    <p>丹羽　桃子</p>                  
+                    <p>丹羽　桃子</p>
                 </div>
             </div>
             <div class="member_profile">
                 <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>父</p>
-                    <p>山口　翔大</p>   
-                    
-                </div>            
-                <div class="member1">
-                    <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
-                    <p>次男</p>
-                    <p>山本　陸</p>                  
+                    <p>山口　翔大</p>
+
                 </div>
-            </div>            
+                <div class="member1">
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
+                    <p>次男</p>
+                    <p>山本　陸</p>
+                </div>
+            </div>
         </div>
 
     </main>
     <footer>
-
     </footer>
 
-    
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+
 </body>
 </html>
