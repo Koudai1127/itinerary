@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="destyle.css">
-    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="profile.css"> 
+    <script type="text/javascript" src="profile.js" defer></script>
     <title>Aチーム旅行/プロフィール</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div class = "headermain">    
             <div class="headerlogo">
                 <img src="img/logo.png" alt="Aチームロゴ">
-                <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
+                <p>SSS&nbsp;Aチーム<br>１年記念旅行</p>
             </div>
             <div class="pc-menu">
                 <ul>
@@ -46,7 +47,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </header>
@@ -56,13 +56,21 @@
                 <div class="member1">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
                     <p></p>
-                    <p></p>   
-                    
-                </div>            
-                <div class="member1">
+                    <p></p>                       
+                </div>
+                <button id="modalOpen1" class="member1">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
                     <p>長男</p>
-                    <p>岸上　航大</p>                  
+                    <p>岸上　航大</p>
+                </button>                 
+                <div id="easyModal1" class="modal1">
+                    <div class="modal-content">
+                        <span class="modalClose1">×</span>
+                        </span>
+                        <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
+                        <p>長男</p>
+                        <p>岸上　航大</p>                                                
+                    </div>
                 </div>
             </div>
             <div class="member_profile">
@@ -93,11 +101,11 @@
             </div>            
         </div>
 
+        
+
     </main>
     <footer>
 
     </footer>
-
-    
 </body>
 </html>
