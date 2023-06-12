@@ -1,23 +1,23 @@
-// js‚ÅÅ‰‚É“Ç‚İ‚Ş‚à‚Ì
+// jsã§ã®ãƒ¢ãƒ¼ãƒ€ãƒ«ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¡¨ç¤º
 
-// ƒ‚[ƒ_ƒ‹ƒEƒBƒ“ƒhƒE‚ÌÀ‘•----------------------------------------------------
+// ãƒ¢ãƒ¼ãƒ€ãƒ«ã‚’å‘¼ã³å‡ºã™----------------------------------------------------
 const buttonOpen1 = document.getElementById('modalOpen1');
 const modal1 = document.getElementById('easyModal1');
 const buttonClose1 = document.getElementsByClassName('modalClose1')[0];
 
-// ƒ{ƒ^ƒ“‚ªƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«
+// ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ã
 buttonOpen1.addEventListener('click', modalOpen1);
 function modalOpen1() {
     modal1.style.display = 'block';
 }
 
-//~ˆó‚ªƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«
+//ã€€é–‰ã˜ã‚‹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸæ™‚
 buttonClose1.addEventListener('click', modalClose1);
 function modalClose1() {
     modal1.style.display = "none";
 }
 
-//ƒ‚[ƒ_ƒ‹ƒRƒ“ƒeƒ“ƒcˆÈŠO‚ªƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«
+//ã€€ãƒ¢ãƒ¼ãƒ€ãƒ«å¤–ã‚’æŠ¼ã—ãŸæ™‚
 addEventListener('click', outsideClose);
 function outsideClose(e) {
     if (e.target == modal1) {
