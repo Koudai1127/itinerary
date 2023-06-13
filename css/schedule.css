@@ -1,45 +1,84 @@
 ﻿body{
-    margin-top: 500px;
     margin-bottom: 500px;
 }
 
 main{
     padding-top: 4.5rem;
-    z-index: 0;
+    z-index: -100;
 }
 
 /*タイムライン全体の設定*/
 .timeline {
-    max-width: 400px;
-    width: 100%;
-    margin: 50px auto;
-    padding: 0 30px;
+    margin-left: 5%;
+    margin-top: 30px;
 }
 
-    .timeline li {
-        /*線の起点とするためrelativeを設定*/
-        position: relative;
-        list-style: none;
-        padding: 0 0 20px 0;
-    }
+.timeline li {
+    /*線の起点とするためrelativeを設定*/
+/*    position: relative;*/
+    padding-bottom: 40px;
+}
 
-    .timeline dl {
-        margin: 0 0 20px 3em;
-    }
+.content{
+    display: flex;
+    width: 90%;
+}
 
-/*絶対配置で線を設定*/
-.border-line {
-    /*線の位置*/
+.content img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #3AABD2;
+    background-color: #ffffff;
     position: absolute;
-    left: 0.2em;
-    top: 0;
-    width: 2px; /*線の太さ*/
-    height: 0; /*はじめは高さを0に*/
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #000000;
+    background-color: #4B8CC4;
+    width: 250px;
+    padding: 10px 0 5px 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+/*吹き出し部分*/
+.content::before {
+    content: "";
+    border-bottom: 15px solid #4B8CC4;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 18px;
+    left: 63px;
+    transform: rotate(45deg);
+}
+
+.bubble p {
+    padding: 10px 0 10px 10px;
+    background-color: #e6e6fa;
+    border-radius: 0 0 10px 10px;
+    width: 250px;
+    font-size: 0.9rem;
+}
+
+.bubble {
+    position: relative;
+    left: 55px;
+    top: 5px;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 0; /*jsで変更*/
+    top: 25px;
+    width: 2px;
+    height: 200px; /*はじめは高さを0に*/
     background: #ccc;
 }
 
 /*タイムラインの見出し横の丸の位置と形状*/
-.timeline li::after {
+/*.timeline li::after {
     content: '';
     position: absolute;
     top: 0;
@@ -48,4 +87,9 @@ main{
     height: 10px;
     background: #666;
     border-radius: 50%;
+}*/
+
+h1{
+    font-size: 1.5rem;
+    padding-top: 10px;
 }
