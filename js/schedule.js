@@ -1,43 +1,49 @@
-const vertical = document.querySelector(".vertical-line");
+const vertical = document.querySelectorAll(".vertical-line");
 const width = window.innerWidth;
-var left_line = width * 0.05 + 24 //縦線のleftの値を記録する(px)
+const height = window.innerHeight;
+const y = window.scrollY;
+const first_contents = document.querySelectorAll(".first");//一日目の行程をすべて取得
+const second_contents = document.querySelectorAll(".second");//二日目の行程をすべて取得
 
-//縦線の横幅を変更
-vertical.style.left = left_line + "px";
+// 一番最初の要素の最上部からの高さを取得
+var first = first_contents[0].offsetTop;
+var second = second_contents[0].offsetTop;
 
 
+//縦線の位置を変更(px)
+var left_line = width * 0.05 + 24;
+vertical[0].style.left = left_line + "px";
+vertical[1].style.left = left_line + "px";
+vertical[0].style.top = first + 25 + "px";
+vertical[1].style.top = second + 25 + "px";
 
 
-////線が伸びるための設定を関数でまとめる
-//function ScrollTimelineAnime() {
-//	$('.timeline li').each(function () {// それぞれのli要素の
-//		var elemPos = $(this).offset().top;// 上からの高さ取得
-//		var scroll = $(window).scrollTop();// スクロール値取得
-//		var windowHeight = $(window).height();// windowの高さ取得
-//		var startPoint = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
-//		if (scroll >= elemPos - windowHeight - startPoint) {
-//			var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
-//			//スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
-//			var percent = (scroll + startPoint - elemPos) / (H / 2) * 100;//liの余白と高さの半分で線を100％に伸ばす
+//一日目の縦線の長さを変更(px)
+var now = y + height / 3;//画面中央
+var line_max_first = 0;
+for (let i = 0; i < first_contents.length - 1; i++) {
+    line_max_first += first_contents[i].clientHeight;
+}//最大の線の高さを計算
 
-//			// 100% を超えたらずっと100%を入れ続ける
-//			if (percent > 100) {
-//				percent = 100;
-//			}
-//			// ボーダーの長さをセット
-//			$(this).children('.border-line').css({
-//				height: percent + "%", //CSSでパーセント指定
-//			});
-//		}
-//	});
-//}
+window.addEventListener("scroll", () => {
+    if (line_max_first + first + 25 < now) {
+        vertical[0].style.height = line_max_first + "px";
+    } else if (first < now) {
+        vertical[0].style.height = now - first + "px";
+    }
+});
 
-//// 画面をスクロールをしたら動かしたい場合の記述
-//$(window).on('scroll', function () {
-//	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
-//});
 
-//// ページが読み込まれたらすぐに動かしたい場合の記述
-//$(window).on('load', function () {
-//	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
-//});
+//二日目の縦線の長さを変更(px)
+var line_max_second = 0;
+for (let i = 0; i < second_contents.length - 1; i++) {
+    line_max_second += second_contents[i].clientHeight;
+}//最大の線の高さを計算
+
+window.addEventListener("scroll", () => {
+    if (line_max_second + second + 25 < now) {
+        vertical[1].style.height = line_max_second + "px";
+    } else if (second < now) {
+        vertical[1].style.height = now - second + "px";
+    }
+});
