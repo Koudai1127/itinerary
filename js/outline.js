@@ -1,16 +1,24 @@
 const slide = document.querySelector(".js_slide");
+const clientRect = slide.getBoundingClientRect();
 const go_left = document.querySelector(".go_left");
 const go_right = document.querySelector(".go_right");
 const loc = document.querySelectorAll(".loc span");
 const description = document.querySelector(".description");
-const width = window.innerWidth;
+const content = document.querySelectorAll(".content");
+const width = screen.width;
 
 //写真の一覧（画像のサイズはそろえること！！！）
-const img_src = ["img/dummyHotel.jpg", "img/dummyHotelRoom.jpg", "img/dummyHotelRoom2.jpg"];
-const img_alt = ["外観", "男子部屋", "女子部屋"];
+const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];
+const img_alt = ["外観", "和室", "温泉"];
 
-//写真の幅を調整
-slide.style.width = width - 20 + "px";
+//幅を調整
+slide.style.width = width + "px";
+//for (let i = 0; i < content.length; i++) {
+//    content[i].style.width = width - 10 + "px";
+//}
+
+//位置を調整
+slide.style.left = - clientRect.left + "px";
 
 //初期状態
 loc[0].style.backgroundColor = "#808080";

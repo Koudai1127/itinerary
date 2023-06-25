@@ -41,13 +41,14 @@ h1{
 
 .js_slide{
     position: relative;
-    left: -23px;
     width: 0; /*jsで変更*/
     z-index: 0;
 
 }
 
 .go_right {
+    position: relative;
+    left: -10px;
     padding: 5px;
     z-index: 10;
     background-color: #d3d3d3;
@@ -57,7 +58,7 @@ h1{
 .go_left {
     position: relative;
     padding: 5px;
-    left: -46px;
+    left: -56px;
     z-index: 10;
     background-color: #d3d3d3;
     opacity: 0.6;
@@ -79,4 +80,11 @@ h1{
 h3{
     padding-top: 10px;
     font-size: 1.3rem;
+}
+
+.two_line{
+    padding-left: 10px;
+    column-count: 2;
+    font-size: 0.95rem;
+    list-style: disc;
 }

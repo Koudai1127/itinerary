@@ -7,8 +7,14 @@
 /* メイン-------------------------------------------------- */
 main {
     padding-top: 4.5rem;
-    height: 2000px;
+    background-color: #D7EEFF;
+    height: 100vh;
 }
+
+.video{
+    z-index: -1;
+}
+
 
 
 
