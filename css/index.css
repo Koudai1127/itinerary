@@ -11,10 +11,24 @@ main {
     height: 100vh;
 }
 
-.video{
-    z-index: -1;
+video{
+    display: block;
+    z-index: -100;
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    width: 30%;
+    border: 2px solid #000000;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0;
+}
 
 
 
