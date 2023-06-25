@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/profile.css">
     <script type="text/javascript" src="js/header.js" defer></script>
     <script type="text/javascript" src="js/profile.js" defer></script>
-    <title>Aチーム旅行 しおり</title>
+    <title>Aチーム旅行しおり/プロフィール</title>
 </head>
 <body>
     <header>
@@ -20,19 +20,6 @@
                     <p>PAC&nbsp;Aチーム<br>１年記念旅行</p>
                 </div>
             </a>
-            <!--<div class="pc-menu">
-                <ul>
-                    <li>
-                        <a href="#">概要</a>
-                    </li>
-                    <li>
-                        <a href="#">１日目</a>
-                    </li>
-                    <li>
-                        <a href="#">２日目</a>
-                    </li>
-                </ul>
-            </div>-->
             <div class="sp-menu">
                 <button class="sp-menu__box" , type="button">
                     <span id="top"></span>
@@ -64,46 +51,171 @@
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>あだ名</p>
                     <p>名前</p>
-
                 </div>
-                <button id="modalOpen1" class="member1">
+                <button id="member1" class="member1">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>きっしー</p>
                     <p>岸上　航大</p>
                 </button>                 
-                <div id="easyModal1" class="modal1">
-                    <div class="modal-content">
-                        <span class="modalClose1">×</span>
-                        <img src="img/puzzle_yamamoto.png" alt="りくの写真"class="photo"> 
-                        <p>きっしー</p>
-                        <p>岸上　航大</p>                                                
+                <div id="overlay" class="overlay">
+                    <div id="modal" class="modal">
+                        <span id="modalClose" class="modalClose">×</span>                   
+                        <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="modalPhoto"> 
+                        <table class="table">
+                            <th >あだ名</th>
+                            <td >きっしー</td>
+                            <th>名前</th>
+                            <td>岸上　航大</td>
+                            <th>Q.生まれ変わるなら</th>
+                            <td>コミュ力お化けな人間</td>
+                            <th>Q.宝くじで１億円当たったら？</th>
+                            <td>詐欺に引っかかってみたい</td>
+                            <th>Q.大人を実感する瞬間は？</th>
+                            <td>クレカで10万くらい買い物したとき</td>
+                            <th>Q.自分ってどんな人だと思いますか？</th>
+                            <td>物静かだけど笑い声うるさい</td>
+                            <th>Q.一番幸せなときは？</th>
+                            <td>人と遊び疲れたときに家で一人でいる時間</td>
+                            <th>Q.一番仕事で嬉しかったことは？</th>
+                            <td>研修うまくいかなかったときに励ましていただいたとき</td>
+                            <th>Q.10年後どんな人になりたいですか？</th>
+                            <td>機能バリバリ作ったり、後輩に頼られる人</td>
+                            <th>Q.あなたの武勇伝は？</th>
+                            <td>卒論の学会発表や学術論文執筆したこと、首席で卒業したこと</td>
+                        </table>
                     </div>
-                </div>
+                </div>                
             </div>
             <div class="member_profile">
-                <div class="member1">
+                <button id="member2" class="member2">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>こみちゃん</p>
                     <p>小林　海生</p>
-
+                </button>
+                <div id="overlay2" class="overlay2"></div>
+                <div id="modal2" class="modal2">
+                    <span id="modalClose2" class="modalClose2">×</span>                   
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="modalPhoto"> 
+                    <table class="table2">
+                        <th>あだ名</th>
+                        <td>こみちゃん</td>
+                        <th>名前</th>
+                        <td>小林　海生</td>
+                        <th>Q.生まれ変わるなら</th>
+                        <td>平安時代の貴族</td>
+                        <th>Q.宝くじで１億円当たったら？</th>
+                        <td>1LDKのマンションに引っ越す</td>
+                        <th>Q.大人を実感する瞬間は？</th>
+                        <td>毎朝の通勤で、新橋で降りるとき</td>
+                        <th>Q.自分ってどんな人だと思いますか？</th>
+                        <td>典型的なAB型</td>
+                        <th>Q.一番幸せなときは？</th>
+                        <td>未来の話をするとき</td>
+                        <th>Q.一番仕事で嬉しかったことは？</th>
+                        <td>お客様から「丁寧な対応ありがとうございます」と言われたとき</td>
+                        <th>Q.10年後どんな人になりたいですか？</th>
+                        <td>仕事もプライベートも楽しんでいる人</td>
+                        <th>Q.あなたの武勇伝は？</th>
+                        <td>未経験で薙刀を始めて、３ヶ月でインターハイ行きました！</td>
+                    </table>
                 </div>
-                <div class="member1">
+                <button id="member3" class="member3">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>にわちゃん</p>
                     <p>丹羽　桃子</p>
+                </button>
+                <div id="overlay3" class="overlay3"></div>
+                <div id="modal3" class="modal3">
+                    <span id="modalClose3" class="modalClose3">×</span>                   
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="modalPhoto"> 
+                    <table class="table3">
+                        <th >あだ名</th>
+                        <td >にわちゃん</td>
+                        <th>名前</th>
+                        <td>丹羽　桃子</td>
+                        <th>Q.生まれ変わるなら</th>
+                        <td>スヌーピー</td>
+                        <th>Q.宝くじで１億円当たったら？</th>
+                        <td>世界旅行に行きます！</td>
+                        <th>Q.大人を実感する瞬間は？</th>
+                        <td>クレカ一括払いするとき</td>
+                        <th>Q.自分ってどんな人だと思いますか？</th>
+                        <td>本能でなんでも動くタイプの人</td>
+                        <th>Q.一番幸せなときは？</th>
+                        <td>友達と一緒にご飯を食べているとき</td>
+                        <th>Q.一番仕事で嬉しかったことは？</th>
+                        <td>商談のときに自分の名前を紹介されたとき</td>
+                        <th>Q.10年後どんな人になりたいですか？</th>
+                        <td>お金持ち</td>
+                        <th>Q.あなたの武勇伝は？</th>
+                        <td>特にないです、、、ごめんなさい</td>
+                    </table>
                 </div>
-            </div>
+            </div>    
             <div class="member_profile">
-                <div class="member1">
+                <button id="member4" class="member4">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>しょーた</p>
                     <p>山口　翔大</p>
-
+                </button>
+                <div id="overlay4" class="overlay4"></div>
+                <div id="modal4" class="modal4">
+                    <span id="modalClose4" class="modalClose4">×</span>                   
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="modalPhoto"> 
+                    <table class="table4">
+                        <th >あだ名</th>
+                        <td >しょーた</td>
+                        <th>名前</th>
+                        <td>山口　翔大</td>
+                        <th>Q.生まれ変わるなら</th>
+                        <td>アイアンマン</td>
+                        <th>Q.宝くじで１億円当たったら？</th>
+                        <td>世界旅行に行く</td>
+                        <th>Q.大人を実感する瞬間は？</th>
+                        <td>大人の会話に入れたとき</td>
+                        <th>Q.自分ってどんな人だと思いますか？</th>
+                        <td>好奇心旺盛、多重人格、話しかけやすいところもある？</td>
+                        <th>Q.一番幸せなときは？</th>
+                        <td>犬を抱きしめているとき</td>
+                        <th>Q.一番仕事で嬉しかったことは？</th>
+                        <td>内定者グループ活動</td>
+                        <th>Q.10年後どんな人になりたいですか？</th>
+                        <td>TPのカスタマーサクセスを引っ張れる人になりたい</td>
+                        <th>Q.あなたの武勇伝は？</th>
+                        <td>バイトで社員の５倍の成績を出し、マニュアル化し全国展開した</td>
+                    </table>
                 </div>
-                <div class="member1">
+                <button id="member5" class="member5">
                     <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="photo">
                     <p>やまり</p>
                     <p>山本　陸</p>
+                </button>
+                <div id="overlay5" class="overlay5"></div>
+                <div id="modal5" class="modal5">
+                    <span id="modalClose5" class="modalClose5">×</span>                   
+                    <img src="img/puzzle_yamamoto.png" alt="りくの写真" class="modalPhoto"> 
+                    <table class="table5">
+                        <th >あだ名</th>
+                        <td >やまり</td>
+                        <th>名前</th>
+                        <td>山本　陸</td>
+                        <th>Q.生まれ変わるなら</th>
+                        <td>鳥</td>
+                        <th>Q.宝くじで１億円当たったら？</th>
+                        <td>島買う</td>
+                        <th>Q.大人を実感する瞬間は？</th>
+                        <td>お酒を飲んだときに苦さを感じるとき、一応年齢的には飲めるから</td>
+                        <th>Q.自分ってどんな人だと思いますか？</th>
+                        <td>自由奔放</td>
+                        <th>Q.一番幸せなときは？</th>
+                        <td>公園の芝生で快晴な空を見るとき</td>
+                        <th>Q.一番仕事で嬉しかったことは？</th>
+                        <td>名前を呼ばれたとき、覚えて貰えてるんだなと感じる</td>
+                        <th>Q.10年後どんな人になりたいですか？</th>
+                        <td>何もかもに余裕がある人、仕事やプライベートやお金とか</td>
+                        <th>Q.あなたの武勇伝は？</th>
+                        <td>投票が一番多く、実行委員長に選ばれた（中学）</td>
+                    </table>
                 </div>
             </div>
         </div>
