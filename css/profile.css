@@ -8,19 +8,14 @@ header {
 /* メイン-------------------------------------------------- */
 main {
     padding-top: 4.5rem;
-    min-height: 100vh;
+    min-height: 100vh; 
     background-color: #D7EEFF	;    
 }
 
 .member {
     width: 95%;
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
-    /* align-items: start; */
-    padding-top: 3rem;
+    padding: 3rem 0 3rem 0;
     margin: 0 auto;
-    /* background-color: red; */
-
 }
 
 .logo {
@@ -66,73 +61,11 @@ main {
     margin-bottom: .5rem;
 }
 
-/* モーダル部分 */
-/* .overlay {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    background-color: #8b8b8bbf;
-    animation-name: fadeInAnime;
-    animation-timing-function: ease;
-    animation-duration: .5s;
-
-}
-
-@keyframes fadeInAnime {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.overlay.fadeout {
-    animation-name: fadeOutAnime;
-    animation-timing-function: ease;
-    animation-duration: .5s;
-}
-
-@keyframes fadeOutAnime {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-.modal {
-    background-color: #ffffff;
-    margin: 7rem 2.5rem 4rem 2.5rem;
-    height: 120%;
-    border-radius: 1rem;
-    border: .15rem solid black;
-}
-
-.modal span {
-    font-size: 2rem;
-    text-align: right;
-    display: block;
-    margin-right: .6rem;
-}
-
-
-.modalClose:hover {
-    cursor: pointer;
-} */
 
 /* 新規作成 ------------------------------------------*/
 .modalPhoto {
     width: 100%;
     margin-bottom: .75rem;
-    /* filter: drop-shadow(3px 3px 1px rgba(97, 97, 97, 0.609)); */
 }
 
 /* 航大用 */
@@ -191,6 +124,33 @@ main {
     display: block;
     margin-right: 1rem;
     margin-top: .3rem;
+}
+
+.table {
+    margin-bottom: 4rem;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: .1rem solid #004b84; */
+}
+
+.table th,.table td {
+    display: block;
+    margin: 0 1.5rem;
+    border: 1.5px solid #004b84;
+}
+
+.table th {
+    text-align: left;
+    padding-left: .2rem;
+    background-color: #67bafa;
+}
+
+.table td {
+    background-color: #a6d9ff;
+}
+
+.table td:last-child {
+    border-bottom: 1.5px solid #004b84;
 }
 
 /* こみた用 */
@@ -310,6 +270,10 @@ main {
     background-color: #fadff3;
 }
 
+.table2 td:last-child {
+    border-bottom: 1.5px solid #d903a0;
+}
+
 
 /* 桃子ちゃん用 */
 
@@ -383,25 +347,6 @@ main {
 }
 
 
-/* 
-.photo {
-    width: 100%;
-    margin-bottom: .75rem;
-    filter: drop-shadow(3px 3px 1px rgba(97, 97, 97, 0.609));
-}
-
-.photo:hover {
-    cursor: pointer;
-    opacity: .7;
-    transition: 1s;
-    transform: scale(1.05,1.05);
-}
-
-.photo:active {
-    position: relative;
-    top: 3px;
-}
- */
 
  
 .member3 p {
@@ -431,6 +376,10 @@ main {
     background-color: #f8efb7;
 }
 
+
+.table3 td:last-child {
+    border-bottom: 1.5px solid #d9c403;
+}
 
 /* しょーた用 */
 
@@ -479,10 +428,10 @@ main {
     transform: translateX(-50%);
     width: 80%;
     max-height: 700px;
-    background-color: #f8efb7;
+    background-color: #cacaca;
     z-index: 2;
     border-radius: 25px;
-    border: 2px solid #d9c403;    
+    border: 2px solid #434343;    
 }
 
 .modal4 span {
@@ -503,27 +452,6 @@ main {
     cursor: pointer;
 }
 
-
-/* 
-.photo {
-    width: 100%;
-    margin-bottom: .75rem;
-    filter: drop-shadow(3px 3px 1px rgba(97, 97, 97, 0.609));
-}
-
-.photo:hover {
-    cursor: pointer;
-    opacity: .7;
-    transition: 1s;
-    transform: scale(1.05,1.05);
-}
-
-.photo:active {
-    position: relative;
-    top: 3px;
-}
- */
-
  
 .member4 p {
     margin-bottom: .5rem;
@@ -539,17 +467,22 @@ main {
 .table4 th,.table4 td {
     display: block;
     margin: 0 1.5rem;
-    border: 1.5px solid #d9c403;
+    border: 1.5px solid #434343;
 }
 
 .table4 th {
     text-align: left;
     padding-left: .2rem;
-    background-color: #f9f17e;
+    background-color: #cacaca;
 }
 
 .table4 td {
-    background-color: #f8efb7;
+    background-color: #eeeeee;
+}
+
+
+.table4 td:last-child {
+    border-bottom: 1.5px solid #434343;
 }
 
 
@@ -625,26 +558,6 @@ main {
 }
 
 
-/* 
-.photo {
-    width: 100%;
-    margin-bottom: .75rem;
-    filter: drop-shadow(3px 3px 1px rgba(97, 97, 97, 0.609));
-}
-
-.photo:hover {
-    cursor: pointer;
-    opacity: .7;
-    transition: 1s;
-    transform: scale(1.05,1.05);
-}
-
-.photo:active {
-    position: relative;
-    top: 3px;
-}
- */
-
  
 .member5 p {
     margin-bottom: .5rem;
@@ -669,34 +582,23 @@ main {
     background-color: #67bafa;
 }
 
+
 .table5 td {
     background-color: #a6d9ff;
+}
+
+.table5 td:last-child {
+    border-bottom: 1.5px solid #004b84;
 }
 
 
 
 /* テーブル */
-.table {
-    margin-bottom: 4rem;
-    width: 100%;
-    border-collapse: collapse;
-    /* border: .1rem solid #004b84; */
+.borderonly td {
+    border-bottom: none;
+    border-top: none;
 }
 
-.table th,.table td {
-    display: block;
-    margin: 0 1.5rem;
-    border: 1.5px solid #004b84;
+.borderonly th,.borderonly td {
+    padding: 3px 5px;
 }
-
-.table th {
-    text-align: left;
-    padding-left: .2rem;
-    background-color: #67bafa;
-}
-
-.table td {
-    background-color: #a6d9ff;
-}
-
-
