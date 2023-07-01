@@ -4,11 +4,11 @@
 
 body {
     margin-bottom: 500px;
-    margin-top: 500px;
 }
 
-main{
+main {
     padding-top: 4.5rem;
+    background-color: #D7EEFF;
 }
 
 /*タイムライン全体の設定*/
@@ -96,7 +96,9 @@ main{
     border-radius: 50%;
 }*/
 
-h1{
+h1 {
     font-size: 1.5rem;
-    padding-top: 10px;
+    border-left: 5px solid blue;
+    padding: 10px 0 10px 5%;
+    margin: 25px 0 25px 10px;
 }

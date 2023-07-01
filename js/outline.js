@@ -1,3 +1,10 @@
+//画面サイズそろえる
+const title = document.querySelector(".title");
+const width = screen.width;
+
+title.style.width = width + "px";
+
+//スライドショー
 const slide = document.querySelector(".js_slide");
 const clientRect = slide.getBoundingClientRect();
 const go_left = document.querySelector(".go_left");
@@ -5,7 +12,7 @@ const go_right = document.querySelector(".go_right");
 const loc = document.querySelectorAll(".loc span");
 const description = document.querySelector(".description");
 const content = document.querySelectorAll(".content");
-const width = screen.width;
+
 
 //写真の一覧（画像のサイズはそろえること！！！）
 const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];

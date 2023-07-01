@@ -11,9 +11,8 @@ main {
     height: 100vh;
 }
 
-video{
+video {
     display: block;
-    z-index: -100;
 }
 
 .buttons{
@@ -28,6 +27,7 @@ video{
     text-align: center;
     margin: 10px;
     padding: 10px 0;
+    opacity: 0;
 }
 
 
