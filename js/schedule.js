@@ -1,8 +1,10 @@
 //画面サイズそろえる
 const title = document.querySelector(".title");
+const finish = document.querySelector(".finish img");
 const wid = screen.width;
 
 title.style.width = wid + "px";
+finish.style.width = wid + "px";
 
 
 const vertical = document.querySelectorAll(".vertical-line");
@@ -26,7 +28,7 @@ vertical[1].style.top = second + 25 + "px";
 
 
 //一日目の縦線の長さを変更(px)
-var now = y + height / 2.5;//画面中央
+var now = y + height / 2;//画面中央
 var line_max_first = 0;
 for (let i = 0; i < first_contents.length - 1; i++) {
     line_max_first += first_contents[i].clientHeight;
