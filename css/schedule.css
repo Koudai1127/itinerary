@@ -2,10 +2,6 @@
     z-index: 100;
 }
 
-body {
-    margin-bottom: 500px;
-}
-
 main {
     padding-top: 4.5rem;
     background-color: #D7EEFF;
@@ -101,4 +97,9 @@ h1 {
     border-left: 5px solid blue;
     padding: 10px 0 10px 5%;
     margin: 25px 0 25px 10px;
+}
+
+.finish p{
+    margin: 30px 0 20px 0;
+    text-align: center;
 }

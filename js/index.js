@@ -1,6 +1,41 @@
+//ローディング画面
+const loadimg = document.querySelector(".loading img");
+const duration = 1000;
+
+loadimg.animate({
+    opacity: [1, 0]
+}, {
+    duration: 800,
+    direction: "alternate",
+    easing: "ease",
+    iterations: Infinity
+});
+
+window.addEventListener('load', () => {
+    const loading = document.querySelector('.loading');
+
+    console.log("load");
+    loading.animate({
+        opacity: [1, 0],
+    }, {
+        duration: duration,
+        easing: "ease",
+        fill: "forwards",
+    });
+
+    loading.style.display = "none";
+});
+
+
+//videoの幅を制御
 const width = screen.width;
 const video = document.querySelector("video");
 video.style.width = width + "px";
+
+//ローディング画面が終わってからvideo再生
+//setTimeout({
+
+//})
 
 //videoタグを一時的に消してメニューを反応させる
 var see = "";
@@ -13,21 +48,3 @@ icon.addEventListener("click", () => {
     }
     video.style.visibility = see
 });
-
-//buttonを動画終了後に表示する
-const buttons = document.querySelectorAll(".buttons button");
-
-function fadein(button) {
-    button.animate({
-        opacity: [0, 1],
-        translate: ["0 50px", 0],
-    }, {
-        dulation: 3000,
-        easing: "ease-out",
-        fill: "forwards"
-    });
-};
-
-for (let i = 0; i < buttons.length; i++) {
-    setTimeout(fadein(buttons[i]), 1000 + 500 * i);
-};
