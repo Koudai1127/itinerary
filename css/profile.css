@@ -110,7 +110,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 700px;
+    max-height: 80%;
     background-color: #D7EEFF;
     z-index: 2;
     border-radius: 25px;
@@ -198,7 +198,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 700px;
+    max-height: 80%;
     background-color: #fadff3;
     z-index: 2;
     border-radius: 25px;
@@ -320,7 +320,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 700px;
+    max-height: 80%;
     background-color: #f8efb7;
     z-index: 2;
     border-radius: 25px;
@@ -426,7 +426,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 700px;
+    max-height: 80%;
     background-color: #cacaca;
     z-index: 2;
     border-radius: 25px;
@@ -531,7 +531,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 700px;
+    max-height: 80%;
     background-color: #a6d9ff;
     z-index: 2;
     border-radius: 25px;
