@@ -7,19 +7,19 @@
 /*　ローディング画面--------------------------------------- */
 .loading{
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
-    text-align: center;
+    background-color: #ffffff;
     padding-top: 50%;
+    text-align: center;
 }
 
 .loading img{
     height: 20%;
 }
 
-.loading p{
+.loading p {
     font-size: 1.5rem;
 }
 
