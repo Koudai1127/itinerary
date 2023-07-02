@@ -1,11 +1,6 @@
-//画面サイズそろえる
-const title = document.querySelector(".title");
-const width = screen.width;
-
-title.style.width = width + "px";
-
 //スライドショー
 const slide = document.querySelector(".js_slide");
+const width = screen.width;
 const clientRect = slide.getBoundingClientRect();
 const go_left = document.querySelector(".go_left");
 const go_right = document.querySelector(".go_right");
