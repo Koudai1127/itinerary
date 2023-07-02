@@ -15,12 +15,6 @@ main {
     margin: 0 auto;
 }
 
-.logo {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
 .member_profile {
     display: flex;
 }
@@ -33,6 +27,11 @@ main {
 
 .member1:hover {
     cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: .75rem;
 }
 
 .photo {
