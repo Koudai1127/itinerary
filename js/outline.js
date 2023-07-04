@@ -1,4 +1,3 @@
-//�X���C�h�V���[
 const slide = document.querySelector(".js_slide");
 const width = screen.width;
 const clientRect = slide.getBoundingClientRect();
@@ -9,23 +8,25 @@ const description = document.querySelector(".description");
 const content = document.querySelectorAll(".content");
 
 
-//�ʐ^�̈ꗗ�i�摜�̃T�C�Y�͂��낦�邱�ƁI�I�I�j
+//写真のリスト
 const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];
-const img_alt = ["�O��", "�a��", "����"];
+const img_alt = ["外観", "和室", "温泉"];
 
-//���𒲐�
+//写真の幅を制御
 slide.style.width = width + "px";
 //for (let i = 0; i < content.length; i++) {
 //    content[i].style.width = width - 10 + "px";
 //}
 
-//�ʒu�𒲐�
+//写真とボタンをぴったり重ねる
 slide.style.left = - clientRect.left + "px";
+go_left.style.left = - 2 * clientRect.left + "px";
 
-//�������
+
+//写真下のアイコンの色を初期だけ指定
 loc[0].style.backgroundColor = "#808080";
 
-//�N���b�N���̑���
+//＜、＞を押したときの処理
 let img_num = 0;
 function minus(num) {
     num--;
@@ -44,22 +45,22 @@ function plus(num) {
 };
 
 go_right.addEventListener("click", () => {
-    //�F�����Ƃɖ߂�
+    //色をもとに戻す
     loc[img_num].style.backgroundColor = "#dcdcdc";
-    //�摜�̔ԍ������炷
+    //番号を一つ戻す
     img_num = minus(img_num);
-    //�V�������̂ɕύX
+    //対応する写真を表示して色を変える
     loc[img_num].style.backgroundColor = "#808080";
     description.textContent = img_alt[img_num];
     slide.src = img_src[img_num];
 });
 
 go_left.addEventListener("click", () => {
-    //�F�����Ƃɖ߂�
+    //色をもとに戻す
     loc[img_num].style.backgroundColor = "#dcdcdc";
-    //�摜�̔ԍ������炷
+    //番号を一つ進める
     img_num = plus(img_num);
-    //�V�������̂ɕύX
+    //対応する写真を表示して色を変える
     loc[img_num].style.backgroundColor = "#808080";
     description.textContent = img_alt[img_num];
     slide.src = img_src[img_num];
