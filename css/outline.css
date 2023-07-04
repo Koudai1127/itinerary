@@ -34,7 +34,7 @@ h1{
 
 .content h1{
     text-align: center;
-    padding: 1%;
+    padding: 1% 3%;
     cursor: pointer;
 }
 
@@ -120,4 +120,20 @@ h3{
     opacity: 0;
     line-height: 0;
     height: o;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title::after {
+    display: inline-block;
+    content: '<';
+    transform: rotate(90deg);
+}
+
+.title.is-active::after {
+    transform: rotate(-90deg) translateY(-3px);
+
 }
