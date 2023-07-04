@@ -16,17 +16,26 @@ html {
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    background-color: rgb(75, 140, 196);
 }
 
 .content{
-    margin: 25px 0 25px 10px;
+    margin:5% 5%;
+}
+
+.content:first-child {
+    margin-top: 12.5%;
+}
+
+.content:last-child {
+    margin-bottom: 12.5%;
 }
 
 .content h1{
-    border-left: 5px solid blue;
-    padding-left: 5%;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
 }
 
 .description{
@@ -76,9 +85,15 @@ h1{
     margin: 10px 5px;
 }
 
+.content h3 {
+    border-left: 5px solid blue;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
 h3{
-    padding-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 20px;
+    font-size: 1.25rem;
 }
 
 .two_line{
@@ -90,4 +105,19 @@ h3{
 
 .url {
     text-decoration: underline;
+}
+
+.childcontent {
+    background-color: #e6e6fa;
+    padding: 3%;
+    overflow: hidden;
+    height: auto;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.childcontent.is-close {
+    opacity: 0;
+    line-height: 0;
+    height: o;
 }

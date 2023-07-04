@@ -1,4 +1,4 @@
-//ƒXƒ‰ƒCƒhƒVƒ‡[
+//ï¿½Xï¿½ï¿½ï¿½Cï¿½hï¿½Vï¿½ï¿½ï¿½[
 const slide = document.querySelector(".js_slide");
 const width = screen.width;
 const clientRect = slide.getBoundingClientRect();
@@ -9,23 +9,23 @@ const description = document.querySelector(".description");
 const content = document.querySelectorAll(".content");
 
 
-//Ê^‚Ìˆê——i‰æ‘œ‚ÌƒTƒCƒY‚Í‚»‚ë‚¦‚é‚±‚ÆIIIj
+//ï¿½Ê^ï¿½Ìˆê——ï¿½iï¿½æ‘œï¿½ÌƒTï¿½Cï¿½Yï¿½Í‚ï¿½ï¿½ë‚¦ï¿½é‚±ï¿½ÆIï¿½Iï¿½Iï¿½j
 const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];
-const img_alt = ["ŠOŠÏ", "˜aº", "‰·ò"];
+const img_alt = ["ï¿½Oï¿½ï¿½", "ï¿½aï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½"];
 
-//•‚ğ’²®
+//ï¿½ï¿½ï¿½ğ’²ï¿½
 slide.style.width = width + "px";
 //for (let i = 0; i < content.length; i++) {
 //    content[i].style.width = width - 10 + "px";
 //}
 
-//ˆÊ’u‚ğ’²®
+//ï¿½Ê’uï¿½ğ’²ï¿½
 slide.style.left = - clientRect.left + "px";
 
-//‰Šúó‘Ô
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 loc[0].style.backgroundColor = "#808080";
 
-//ƒNƒŠƒbƒN‚Ì‘€ì
+//ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½Ì‘ï¿½ï¿½ï¿½
 let img_num = 0;
 function minus(num) {
     num--;
@@ -44,23 +44,37 @@ function plus(num) {
 };
 
 go_right.addEventListener("click", () => {
-    //F‚ğ‚à‚Æ‚É–ß‚·
+    //ï¿½Fï¿½ï¿½ï¿½ï¿½ï¿½Æ‚É–ß‚ï¿½
     loc[img_num].style.backgroundColor = "#dcdcdc";
-    //‰æ‘œ‚Ì”Ô†‚ğ‚¸‚ç‚·
+    //ï¿½æ‘œï¿½Ì”Ôï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç‚·
     img_num = minus(img_num);
-    //V‚µ‚¢‚à‚Ì‚É•ÏX
+    //ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚É•ÏX
     loc[img_num].style.backgroundColor = "#808080";
     description.textContent = img_alt[img_num];
     slide.src = img_src[img_num];
 });
 
 go_left.addEventListener("click", () => {
-    //F‚ğ‚à‚Æ‚É–ß‚·
+    //ï¿½Fï¿½ï¿½ï¿½ï¿½ï¿½Æ‚É–ß‚ï¿½
     loc[img_num].style.backgroundColor = "#dcdcdc";
-    //‰æ‘œ‚Ì”Ô†‚ğ‚¸‚ç‚·
+    //ï¿½æ‘œï¿½Ì”Ôï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç‚·
     img_num = plus(img_num);
-    //V‚µ‚¢‚à‚Ì‚É•ÏX
+    //ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚É•ÏX
     loc[img_num].style.backgroundColor = "#808080";
     description.textContent = img_alt[img_num];
     slide.src = img_src[img_num];
 });
+
+
+// ã‚¢ã‚³ãƒ¼ãƒ‡ã‚£ã‚ªãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼å®Ÿè£…ã€€ï¼ˆã‚Šãï¼‰
+const menu = document.querySelectorAll(".js-menu");
+
+function toggle() {
+    const contents = this.nextElementSibling;
+    this.classList.toggle("is-active");
+    contents.classList.toggle("is-close");
+}
+
+for(let i = 0;i < menu.length;i++) {
+    menu[i].addEventListener("click",toggle);
+}
