@@ -36,14 +36,14 @@ for (let i = 0; i < first_contents.length - 1; i++) {
 var line_max_second = 0;
 for (let i = 0; i < second_contents.length - 1; i++) {
     line_max_second += second_contents[i].clientHeight;
-}//最大の線の高さを計算
+}
 
 
-var now;//画面中央を記録
+var now;//画面中央の高さを記録
 let y;//スクロール量を記録
 window.addEventListener("scroll", () => {
     y = window.scrollY;
-    now = y + height / 2;
+    now = y + height / 2.15;
 
     //一日目の縦線の長さを変更(px)
     if (line_max_first + first + 25 < now) {
