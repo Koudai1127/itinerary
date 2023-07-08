@@ -14,7 +14,6 @@ loadimg.animate({
 window.addEventListener('load', () => {
     const loading = document.querySelector('.loading');
 
-    console.log("load");
     loading.animate({
         opacity: [1, 0],
     }, {
