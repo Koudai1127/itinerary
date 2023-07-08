@@ -34,7 +34,7 @@ for (let i = 0; i < first_contents.length - 1; i++) {
     line_max_first += first_contents[i].clientHeight;
 }//Å‘å‚Ìü‚Ì‚‚³‚ðŒvŽZ
 
-window.addEventListener("scroll", () => {
+window.addEventListener("touchmove", () => {
     if (line_max_first + first + 25 < now) {
         vertical[0].style.height = line_max_first + "px";
     } else if (first < now) {
@@ -49,7 +49,7 @@ for (let i = 0; i < second_contents.length - 1; i++) {
     line_max_second += second_contents[i].clientHeight;
 }//Å‘å‚Ìü‚Ì‚‚³‚ðŒvŽZ
 
-window.addEventListener("scroll", () => {
+window.addEventListener("touchmove", () => {
     if (line_max_second + second + 25 < now) {
         vertical[1].style.height = line_max_second + "px";
     } else if (second < now) {
