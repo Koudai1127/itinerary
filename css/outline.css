@@ -39,19 +39,20 @@ h1{
     color: #FFFFFF;
 }
 
-.description{
+/*.description{
     text-align: center;
     font-size: 1.5rem;
     padding: 10px 0 5px 0;
-}
+}*/
 
 .slide {
     display: flex;
+    text-align: center;
 }
 
 .js_slide{
     position: relative;
-    width: 0; /*jsで変更*/
+    width: 100%; /*jsで変更*/
     z-index: 0;
 
 }
