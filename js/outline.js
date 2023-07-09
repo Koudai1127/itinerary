@@ -4,13 +4,13 @@ const clientRect = slide.getBoundingClientRect();
 const go_left = document.querySelector(".go_left");
 const go_right = document.querySelector(".go_right");
 const loc = document.querySelectorAll(".loc span");
-const description = document.querySelector(".description");
+/*const description = document.querySelector(".description");*/
 const content = document.querySelectorAll(".content");
 
 
 //写真のリスト
 const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];
-const img_alt = ["外観", "和室", "温泉"];
+/*const img_alt = ["外観", "和室", "温泉"];*/
 
 //写真の幅を制御
 slide.style.width = width + "px";
@@ -51,7 +51,7 @@ go_right.addEventListener("click", () => {
     img_num = minus(img_num);
     //対応する写真を表示して色を変える
     loc[img_num].style.backgroundColor = "#808080";
-    description.textContent = img_alt[img_num];
+    /*description.textContent = img_alt[img_num];*/
     slide.src = img_src[img_num];
 });
 
@@ -62,7 +62,7 @@ go_left.addEventListener("click", () => {
     img_num = plus(img_num);
     //対応する写真を表示して色を変える
     loc[img_num].style.backgroundColor = "#808080";
-    description.textContent = img_alt[img_num];
+    /*description.textContent = img_alt[img_num];*/
     slide.src = img_src[img_num];
 });
 
