@@ -70,6 +70,10 @@ main {
     top: 5px;
 }
 
+.bubble a {
+    text-decoration: underline;
+}
+
 .vertical-line {
     position: absolute;
     left: 0; /*jsで変更*/
