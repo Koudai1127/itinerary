@@ -9,8 +9,8 @@ const content = document.querySelectorAll(".content");
 
 
 //写真のリスト
-const img_src = ["img/hotel.jpg", "img/room.png", "img/hotspring.jpg"];
-/*const img_alt = ["外観", "和室", "温泉"];*/
+const img_src = ["img/street.jpg", "img/moa.jpg", "img/trick.jpg", "img/park.jpg", "img/hotel.jpg", "img/room.png", "img/hotspring.jpg", "img/port.jpg", "img/rasia.jpg"];
+/*const img_alt = ["熱海仲見世商店街","MOA美術館","熱海トリックアート迷宮館","熱海親水公園","ニューウェルシティ湯河原","和室","温泉", "熱海港", "PICA初島"];*/
 
 //写真の幅を制御
 slide.style.width = width + "px";
