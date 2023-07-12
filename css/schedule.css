@@ -36,7 +36,7 @@ main {
 }
 
 .content h3 {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     border-bottom: 1px solid #000000;
     background-color: #4B8CC4;
     width: 250px;
@@ -72,6 +72,7 @@ main {
 
 .bubble a {
     text-decoration: underline;
+    font-size: 0.65rem;
 }
 
 .vertical-line {
